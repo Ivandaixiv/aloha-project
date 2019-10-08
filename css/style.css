@@ -292,12 +292,18 @@ footer {
 .footer-div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
 }
 .address {
     color: #969696;
 }
 .footer-block {
-    padding: 50px 0;
+    padding: 10px 0;
+}
+.footer-block li {
+    line-height: 25px;
 }
 .footer-block li a {
     color: white;
@@ -305,6 +311,9 @@ footer {
 }
 .footer-block li a:hover {
     color: #E2574C;
+}
+.footer-block li a p{
+    display: none;
 }
 .footer-split {
     padding-top: 20px;
@@ -314,6 +323,9 @@ footer {
 }
 #footer-nav {
     line-height: 30px;
+}
+#footer-nav li {
+    display: inline-block;
 }
 .fab {
     margin-right: 10px;
