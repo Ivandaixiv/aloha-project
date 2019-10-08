@@ -336,8 +336,16 @@ footer {
     }    
 }
 @media screen and (min-width: 600px) {
-
+    #log {
+        order: 1;
+    }
+    #basket {
+        order: 3;
+    }
+    #main-navigation {
+        order: 2;
+    }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1240px) {
     
 }
