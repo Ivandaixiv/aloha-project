@@ -1,0 +1,309 @@
+/* Extra Helper and Resets */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Common Layout Classes */
+body {
+    font-family: 'Raleway';
+}
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 100%;
+}
+.container-small {
+    margin: 0 auto;
+    max-width: 1150px;
+}
+.playfair {
+    font-family: Playfair Display;
+}
+/* header area */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+.container div {
+    display: flex;
+    width: 65%;
+    background-color: white;
+    margin: 0 auto;
+}
+header.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#hidden-logo {
+    display: none;
+}
+#aloha-logo {
+    order: 1;
+    width: 120px;
+    height: 48px;
+}
+#basket {
+    order: 3;
+}
+#basket img{
+    width: 48px;
+    height: 48px;
+}
+#main-navigation {
+    order: 2;
+    flex-grow: 1;
+    align-self: center;
+}
+#main-navigation ul{
+    display: flex;
+    justify-content: center;
+}
+#main-navigation ul li a{
+    margin: 0 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E2574C;
+}
+#main-navigation ul li a:hover{
+    color: #b64036;
+}
+/* banner area */
+.banner {
+    margin-top: 85px;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2))
+                ,url(../img/banner-girl.png) no-repeat center 90px
+                ,url(../img/flower-bkgd.jpg) repeat center;
+    background-size: contain;
+    height: 600px;
+}
+.banner-content {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    text-shadow: 1px 1px #969696;
+}
+.banner-content h2 {
+    font-size: 18px;
+}
+.banner-content h3 {
+    padding-top: 20px;
+    font-size: 60px;
+}
+/* about area */
+#about {
+    font-style: italic;
+    text-align: center;
+    width: 650px;
+    padding: 30px 0 50px 0;
+}
+#about h2 {
+    padding: 50px 0 20px 0;
+    font-size: 40px;
+}
+#about h2 span {
+    font-weight: bold;  
+    font-style: normal;
+}
+#about p {
+    color: #2d2d2d;
+    line-height: 30px;
+    font-style: normal; 
+    font-weight: 200;
+    padding-bottom: 50px;
+}
+/* category area */
+.shop {
+    padding: 80px 0 0 0;
+}
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-content: flex-start;
+}
+.category-list li {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    background-size: cover,cover;
+    height: 47%;
+    align-items: center;
+}
+.category-list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 2px 2px #969696;
+    text-transform: uppercase;  
+}
+.category-list li a:hover {
+    color: #f5ebc6;
+}
+#category-men {
+    flex-grow: 1;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/mens-category.jpg);
+    order: 1;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    flex-basis: 50%;
+}
+#category-trends {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/trends-category.jpg);
+    order: 2;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+}
+#category-glasses {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/glasses-category.jpg);
+    order: 3;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+}
+#category-sale {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/sale-category.jpg);
+    order: 4;
+    border-top: 4px solid white;
+}
+#category-bag {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/bags-category.jpg);
+    order: 5;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+}
+#category-women {
+    flex-grow: 1;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/womens-category.jpg);
+    order: 6;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+}
+/* Featured area */
+#featured {
+    height: 600px;
+}
+.featured-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+.featured-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+}
+.featured-container ul li a {
+    text-align: center;
+    text-decoration: none;
+}
+.featured {
+    font-size: 40px;
+    font-style: italic;
+}
+.featured span {
+    font-weight: bold;
+    font-style: normal;   
+}
+ul.featured-innerlist {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;    
+    align-items: center;
+    height: 100px;
+    line-height: 40px;
+}
+.clothe-type {
+    color: #afaeae;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.clothe-name {
+    color: #E2574C;
+    font-size: 24px;
+}
+.price {
+    color: #969696;
+}
+/* subscribe area */
+.update {
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 2px 1px #969696;
+}
+.update span {
+    font-weight: bold;
+    font-style: normal;   
+}
+#updates div p {
+    text-align: center;
+    line-height: 34px;  
+    font-weight: 300;
+    max-width: 60%;
+    font-size: 18px;
+}
+#updates {
+    background-image:   linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.2    )),
+                        url(../img/wave-bkgd.jpg);
+    background-position: 0 80%;
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#updates .container-small {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+/* footer area */
+footer {
+    background-color: #242424;
+    color: white;
+}
+.footer-div {
+    display: flex;
+    justify-content: space-between;
+}
+.address {
+    color: #969696;
+}
+.footer-block {
+    padding: 50px 0;
+}
+.footer-block li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-block li a:hover {
+    color: #E2574C;
+}
+.footer-split {
+    padding-top: 20px;
+}
+#footer-email {
+    text-decoration: underline;
+}
+#footer-nav {
+    line-height: 30px;
+}
+.fab {
+    margin-right: 10px;
+}

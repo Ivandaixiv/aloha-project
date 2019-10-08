@@ -1,0 +1,326 @@
+/* Extra Helper and Resets */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Common Layout Classes */
+body {
+    font-family: 'Raleway';
+}
+.container {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 100%;
+}
+.container-small {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.playfair {
+    font-family: Playfair Display;
+}
+/* header area */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+header.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#hidden-logo {
+    display: none;
+}
+#aloha-logo {
+    order: 1;
+    width: 120px;
+    height: 48px;
+}
+#basket {
+    order: 2;
+}
+#basket img{
+    width: 48px;
+    height: 48px;
+}
+#main-navigation {
+    order: 3;
+    flex-grow: 1;
+    justify-content: space-around;
+    font-size: 14px;    
+    border-top: 1px solid #d7d7d7;
+    margin-top: 20px;
+}
+#main-navigation ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+#main-navigation ul li a{
+    margin: 0 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #E2574C;
+}
+#main-navigation ul li a:hover{
+    color: #b64036;
+}
+/* banner area */
+.banner {
+    margin-top: 85px;
+    padding: 100px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2))
+                ,url(../img/banner-girl.png) no-repeat center 80px
+                ,url(../img/flower-bkgd.jpg) repeat center;
+    background-size: cover, 40%;
+    height: 420px;
+}
+.banner-content {
+    color: white;
+    text-align: center;
+    padding-top: 65px;
+    text-shadow: 1px 1px #969696;
+}
+.banner-content h2 {
+    font-size: 18px;
+}
+.banner-content h3 {
+    padding-top: 20px;
+    font-size: 40px;
+}
+/* about area */
+#about {
+    font-style: italic;
+    text-align: center;
+    width: 650px;
+    padding: 30px 0 50px 0;
+}
+#about h2 {
+    padding: 50px 0 20px 0;
+    font-size: 34px;
+}
+#about h2 span {
+    font-weight: bold;  
+    font-style: normal;
+}
+#about p {
+    color: #2d2d2d;
+    line-height: 30px;
+    font-style: normal; 
+    font-weight: 200;
+}
+/* category area */
+.shop {
+    height: 850px;
+}
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-content: flex-start;
+}
+.category-list li {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    background-size: cover,cover;
+    height: 30%;
+    align-items: center;
+}
+.category-list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 2px 2px #969696;
+    text-transform: uppercase;  
+}
+.category-list li a:hover {
+    color: #f5ebc6;
+}
+#category-men {
+    flex-grow: 1;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/mens-category.jpg);
+    order: 1;
+    flex-basis: 100%;
+    border-bottom: 4px solid white;
+}
+#category-trends {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/trends-category.jpg);
+    order: 2;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    
+}
+#category-glasses {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/glasses-category.jpg);
+    order: 3;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+}
+#category-sale {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/sale-category.jpg);
+    order: 4;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+}
+#category-bag {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/bags-category.jpg);
+    order: 5;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+}
+#category-women {
+    flex-grow: 1;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/womens-category.jpg);
+    order: 6;
+    border-top: 4px solid white;
+}
+/* Featured area */
+#featured {
+    height: 625px;
+}
+
+.featured {
+    font-size: 34px;
+    font-style: italic;
+}
+.featured span {
+    font-weight: bold;
+    font-style: normal;   
+}
+.featured-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+}
+.featured-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 300px;
+}
+.featured-outterlist {
+    display: none;
+}
+.featured-outterlist:first-child {
+    display: flex;
+}
+.featured-container ul li a {
+    text-align: center;
+    text-decoration: none;
+}
+ul.featured-innerlist {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;    
+    align-items: center;
+    height: 100px;
+    line-height: 35px;
+}
+.clothe-type {
+    color: #afaeae;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.clothe-name {
+    color: #E2574C;
+    font-size: 24px;
+}
+.price {
+    color: #969696;
+}
+/* subscribe area */
+.update {
+    font-size: 36px;
+    font-style: italic;
+    text-shadow: 2px 1px #969696;
+}
+.update span {
+    font-weight: bold;
+    font-style: normal;   
+}
+#updates div p {
+    text-align: center;
+    line-height: 34px;  
+    font-weight: 400;
+    max-width: 98%;
+    font-size: 15px;
+}
+#updates {
+    background-image:   linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.2    )),
+                        url(../img/wave-bkgd.jpg);
+    background-position: 0 80%;
+    background-size: cover;
+    height: 350px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#updates .container-small {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+/* footer area */
+footer {
+    background-color: #242424;
+    color: white;
+}
+.footer-div {
+    display: flex;
+    flex-direction: column;
+}
+.address {
+    color: #969696;
+}
+.footer-block {
+    padding: 50px 0;
+}
+.footer-block li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-block li a:hover {
+    color: #E2574C;
+}
+.footer-split {
+    padding-top: 20px;
+}
+#footer-email {
+    text-decoration: underline;
+}
+#footer-nav {
+    line-height: 30px;
+}
+.fab {
+    margin-right: 10px;
+}
+@media screen and (min-width: 720px) {
+
+}
+@media screen and (min-width: 480px) {
+    
+}

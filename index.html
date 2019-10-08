@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="RED Academy">
+    <meta name="description" content="Aloha Shopping Site">
+    <title>Aloha Apparels</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/fonts.css">
+    <!-- DIfferent CSS stylesheets to practice styling -->
+    <!-- <link rel="stylesheet" href="css/desktopfirstdesign.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header nav seperate logo-left side shoppingcart-right side nav-centred -->
+    <header class="container">
+        <div>
+            <h1 id="hidden-logo">Aloha Apparel Co.</h1>
+            <img src="img/aloha-logo.svg" alt="Aloha logo" class="logo" id="aloha-logo">
+            <a href="#shopping-cart" id="basket"><img src="img/cart-icon.svg" alt="Basket" class="logo"></a>
+            <nav id="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#shop">shop</a>
+                    </li>
+                    <li>
+                        <a href="#featured">featured</a>
+                    </li>
+                    <li>
+                        <a href="#updates">updates</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <!--Banner: person w/ a seperate background design-->
+        <div class="banner-content">
+            <h2>NEW COLLECTION</h2>
+            <h3 class="playfair">Spring/Summer 2019</h3>
+        </div>
+    </section>
+
+    <section class="container-small" id="about">
+        <h2 class="playfair">Hand-Crafted <span>Styles</span></h2>
+        <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or
+            sign-up for updates below.</p>
+    </section>
+
+    <section class="shop" id="shop">
+        <ul class="category-list">
+            <!-- Shopping category list : Could possibly relocated into a nav-->
+            <li id="category-men">
+                <a href="#">Men's</a>
+            </li>
+            <li id="category-trends">
+                <a href="#"">Trends</a>
+            </li>
+            <li id=" category-glasses">
+                    <a href="#">Glasses</a>
+            </li>
+            <li id="category-sale">
+                <a href="#">Sale</a>
+            </li>
+            <li id="category-bag">
+                <a href="#">Bag</a>
+            </li>
+            <li id="category-women">
+                <a href="#">Women's</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="container" id="featured">
+        <div class="featured-container">
+            <h1 class="playfair featured">Most-Loved <span>Products</span></h1>
+            <ul>
+                <li class="featured-outterlist">
+                    <a href="#"><img src="img/stretch-knit-dress.jpg" alt="product1">
+                        <ul class="featured-innerlist">
+                            <li class="clothe-type">Dresses</li>
+                            <li class="clothe-name playfair">Stretch Knit Dress</li>
+                            <li class="price">$119.00</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="featured-outterlist">
+                    <a href="#"><img src="img/cotton-blue-shirt.jpg" alt="product2">
+                        <ul class="featured-innerlist">
+                            <li class="clothe-type">Shirts</li>
+                            <li class="clothe-name playfair">Cotton Blue Shirt</li>
+                            <li class="price">$89.00</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="featured-outterlist">
+                    <a href="#"><img src="img/checked-stretch-dress.jpg" alt="product3">
+                        <ul class="featured-innerlist">
+                            <li class="clothe-type">Dresses</li>
+                            <li class="clothe-name playfair">Checked Stretch Dress</li>
+                            <li class="price">$99.00</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="featured-outterlist">
+                    <a href="#"><img src="img/blue-hipster-backpack.jpg" alt="product4">
+                        <ul class="featured-innerlist">
+                            <li class="clothe-type">Bags</li>
+                            <li class="clothe-name playfair">Blue Hipster Backpack</li>
+                            <li class="price">$69.00</li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="updates">
+        <div class="container-small">
+            <!-- Background ocean image-->
+            <h1 class="playfair update">Sign-up for <span>Updates</span></h1>
+            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free
+                style
+                tips from our blog. Unsubscribe at any time.</p>
+            <!-- Not Styled newsletter subscriber-->
+            <form method="post">
+                <input type="email" name="user-email" placeholder="Your Email" id="mail" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-small footer-div">
+            <ul class="footer-block" id="footer-info">
+                <li>© 2019 Aloha Apparel Co.</li>
+                <li>Powered by HTML and CSS.</li>
+                <li class="footer-split">604-604-6040. <a href="mailto:info@alohaapparel.com"
+                        id="footer-email">info@alohaapparel.com</a></li>
+                <span class="address">
+                    <li class="footer-split">1490 W Broadway</li>
+                    <li>Vancouver, BC, Canada</li>
+                </span>
+            </ul>
+            <!--- Contact informations-->
+            <!-- Footer nav for social media sites-->
+            <nav>
+                <ul class="footer-block" id="footer-nav">
+                    <li>
+                        <a href="#"><i class="fab fa-facebook-f"></i><img src="" alt="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i><img src="" alt="">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i><img src="" alt="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-pinterest"></i><img src="" alt="">Pintrest</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
