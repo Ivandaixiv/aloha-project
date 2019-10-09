@@ -43,7 +43,7 @@ header.container {
 #hidden-logo {
     display: none;
 }
-#aloha-logo {
+.aloha-logo {
     order: 1;
     width: 120px;
     height: 48px;
@@ -51,11 +51,11 @@ header.container {
 #basket {
     order: 2;
 }
-#basket img{
+.basket-logo{
     width: 48px;
     height: 48px;
 }
-#main-navigation {
+.main-navigation {
     order: 3;
     flex-grow: 1;
     justify-content: space-around;
@@ -63,18 +63,18 @@ header.container {
     border-top: 1px solid #d7d7d7;
     margin-top: 20px;
 }
-#main-navigation ul{
+.main-navigation ul{
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
 }
-#main-navigation ul li a{
+.main-navigation ul li a{
     margin: 0 8px;
     text-decoration: none;
     text-transform: uppercase;
     color: #E2574C;
 }
-#main-navigation ul li a:hover{
+.main-navigation ul li a:hover{
     color: #b64036;
 }
 /* banner area */
@@ -336,13 +336,10 @@ footer {
     }    
 }
 @media screen and (min-width: 600px) {
-    #log {
-        order: 1;
-    }
     #basket {
         order: 3;
     }
-    #main-navigation {
+    .main-navigation {
         order: 2;
     }
 }
