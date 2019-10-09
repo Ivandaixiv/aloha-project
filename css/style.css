@@ -341,6 +341,38 @@ footer {
     }
     .main-navigation {
         order: 2;
+        border-top: none;
+    }
+    .main-navigation ul {
+        justify-content: flex-start;
+        font-size: 1.20em;
+        padding: 0;
+    }
+    .main-navigation ul li a {
+        margin: 0px 12px;
+    }
+    .banner {
+        background-position: 50% 0, 50% 50px;
+        background-size: cover, 30%;
+        height: 460px;
+    }
+    .banner-content h2 {
+        font-size: 22px;
+    }
+    .banner-content h3 {
+        font-size: 54px;
+    }
+    .about {
+        padding: 30px 0 55px 0;
+        width: 600px;
+    }
+    .about h2 {
+        font-size: 42px;
+    }
+    .about p {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 50px;
     }
 }
 @media screen and (min-width: 1240px) {
