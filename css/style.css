@@ -101,21 +101,21 @@ header.container {
     font-size: 40px;
 }
 /* about area */
-#about {
+.about {
     font-style: italic;
     text-align: center;
     width: 650px;
     padding: 30px 0 50px 0;
 }
-#about h2 {
+.about h2 {
     padding: 50px 0 20px 0;
     font-size: 34px;
 }
-#about h2 span {
+.about h2 span {
     font-weight: bold;  
     font-style: normal;
 }
-#about p {
+.about p {
     color: #2d2d2d;
     line-height: 30px;
     font-style: normal; 
@@ -195,15 +195,15 @@ header.container {
     border-top: 4px solid white;
 }
 /* Featured area */
-#featured {
+.featured {
     height: 625px;
 }
 
-.featured {
+.featured-h1 {
     font-size: 34px;
     font-style: italic;
 }
-.featured span {
+.featured-h1 span {
     font-weight: bold;
     font-style: normal;   
 }
@@ -251,23 +251,23 @@ ul.featured-innerlist {
     color: #969696;
 }
 /* subscribe area */
-.update {
+.update-h1 {
     font-size: 36px;
     font-style: italic;
     text-shadow: 2px 1px #969696;
 }
-.update span {
+.update-h1 span {
     font-weight: bold;
     font-style: normal;   
 }
-#updates div p {
+.updates div p {
     text-align: center;
     line-height: 34px;  
     font-weight: 400;
     max-width: 98%;
     font-size: 15px;
 }
-#updates {
+.updates {
     background-image:   linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.2    )),
                         url(../img/wave-bkgd.jpg);
     background-position: 0 80%;
@@ -277,7 +277,7 @@ ul.featured-innerlist {
     display: flex;
     align-items: center;
 }
-#updates .container-small {
+.updates .container-small {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -318,13 +318,13 @@ footer {
 .footer-split {
     padding-top: 20px;
 }
-#footer-email {
+.footer-email {
     text-decoration: underline;
 }
-#footer-nav {
+.footer-nav {
     line-height: 30px;
 }
-#footer-nav li {
+.footer-nav li {
     display: inline-block;
 }
 .fab {
