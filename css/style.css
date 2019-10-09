@@ -374,6 +374,37 @@ footer {
         font-weight: 100;
         line-height: 50px;
     }
+    .category-list {
+        height: 56vh;
+    }
+    .category-list li {
+        flex-basis: 25%;
+    }
+    .category-list li a {
+        font-size: 24px;
+    }
+    #category-men {
+        flex-basis: 50%;
+        border-right: 4px solid white;
+    }
+    #category-trends {
+        border-left: 4px solid white;
+        border-top: none;
+    }
+    #category-glasses {
+        border-top: none;
+    }
+    #category-sale {
+        border-bottom: none;
+    }
+    #category-bag {
+        border-right: 4px solid white;
+        border-bottom: none;
+    }
+    #category-women {
+        flex-basis: 50%;
+        border-left: 4px solid white;
+    }
 }
 @media screen and (min-width: 1240px) {
     
