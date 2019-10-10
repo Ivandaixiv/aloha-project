@@ -321,9 +321,6 @@ footer {
 .footer-email {
     text-decoration: underline;
 }
-.footer-nav {
-    line-height: 30px;
-}
 .footer-nav li {
     display: inline-block;
 }
@@ -424,6 +421,21 @@ footer {
         font-size: 18px;
         max-width: 90%;
         font-weight: 100;
+    }
+    .footer-div {
+        text-align: left;
+        flex-direction: row ;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    .footer-nav li {
+        display: flex;
+    }
+    .footer-block li {
+        line-height: 30px;
+    }
+    .footer-block li a p{
+        display: inline;
     }
 }
 @media screen and (min-width: 1240px) {
