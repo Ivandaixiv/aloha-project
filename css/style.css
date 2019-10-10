@@ -375,7 +375,7 @@ footer {
         line-height: 50px;
     }
     .category-list {
-        height: 56vh;
+        height: 50vh;
     }
     .category-list li {
         flex-basis: 25%;
@@ -404,6 +404,26 @@ footer {
     #category-women {
         flex-basis: 50%;
         border-left: 4px solid white;
+    }
+    .shop {
+        height: 350px;
+    }
+    .featured-container {
+        margin: 10px 0;
+    }
+    .featured-h1 {
+        font-size: 40px;
+    }
+    .featured-outterlist:nth-child(2) {
+        display: flex;
+    }
+    .updates {
+       height: 400px;
+    }
+    .updates div p {
+        font-size: 18px;
+        max-width: 90%;
+        font-weight: 100;
     }
 }
 @media screen and (min-width: 1240px) {
