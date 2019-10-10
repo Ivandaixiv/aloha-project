@@ -15,6 +15,10 @@
     <!-- DIfferent CSS stylesheets to practice styling -->
     <!-- <link rel="stylesheet" href="css/desktopfirstdesign.css"> -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -67,7 +71,7 @@
                 <a href="#">Trends</a>
             </li>
             <li id="category-glasses">
-                    <a href="#">Glasses</a>
+                <a href="#">Glasses</a>
             </li>
             <li id="category-sale">
                 <a href="#">Sale</a>
@@ -80,11 +84,12 @@
             </li>
         </ul>
     </section>
+    <!-- Flickity Added here -->
 
     <section class="container featured" id="featured">
-        <div class="featured-container">
+        <div class="main-carousel featured-container">
             <h1 class="playfair featured-h1">Most-Loved <span>Products</span></h1>
-            <ul>
+            <div class="carousel-cell">
                 <li class="featured-outterlist">
                     <a href="#"><img src="img/stretch-knit-dress.jpg" alt="product1">
                         <ul class="featured-innerlist">
@@ -93,6 +98,35 @@
                             <li class="price">$119.00</li>
                         </ul>
                     </a>
+                </li>
+            </div>
+            <div class="carousel-cell">
+                <li class="featured-outterlist">
+                    <a href="#"><img src="img/checked-stretch-dress.jpg" alt="product3">
+                        <ul class="featured-innerlist">
+                            <li class="clothe-type">Dresses</li>
+                            <li class="clothe-name playfair">Checked Stretch Dress</li>
+                            <li class="price">$99.00</li>
+                        </ul>
+                    </a>
+                </li>
+            </div>
+            <div class="carousel-cell">
+                <li class="featured-outterlist">
+                    <a href="#"><img src="img/blue-hipster-backpack.jpg" alt="product4">
+                        <ul class="featured-innerlist">
+                            <li class="clothe-type">Bags</li>
+                            <li class="clothe-name playfair">Blue Hipster Backpack</li>
+                            <li class="price">$69.00</li>
+                        </ul>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+        <!-- <ul>
+                <li class="featured-outterlist">
+                    
                 </li>
                 <li class="featured-outterlist">
                     <a href="#"><img src="img/cotton-blue-shirt.jpg" alt="product2">
@@ -121,8 +155,7 @@
                         </ul>
                     </a>
                 </li>
-            </ul>
-        </div>
+            </ul> -->
     </section>
 
     <section class="updates" id="updates">
@@ -155,21 +188,31 @@
             <!--- Contact informations-->
             <!-- Footer nav for social media sites-->
             <nav>
-                <ul class="footer-block footer-nav playfair">
+                <ul class="footer-block footer-nav">
                     <li>
-                        <a href="#"><i class="fab fa-facebook-f"></i><img src="" alt=""><p>Facebook</p></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i><img src="" alt="">
+                            <p>Facebook</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-twitter"></i><img src="" alt=""><p>Twitter</p></a>
+                        <a href="#"><i class="fab fa-twitter"></i><img src="" alt="">
+                            <p>Twitter</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-instagram"></i><img src="" alt=""><p>Instagram</p></a>
+                        <a href="#"><i class="fab fa-instagram"></i><img src="" alt="">
+                            <p>Instagram</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-pinterest"></i><img src="" alt=""><p>Pintrest</p></a>
+                        <a href="#"><i class="fab fa-pinterest"></i><img src="" alt="">
+                            <p>Pintrest</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fab fa-google-plus-g"></i><img src="" alt=""><p>Google+</p></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i><img src="" alt="">
+                            <p>Google+</p>
+                        </a>
                     </li>
                 </ul>
             </nav>
