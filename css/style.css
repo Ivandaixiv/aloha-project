@@ -303,6 +303,7 @@ div.main-carousel {
 }
 .carousel-cell li {
     list-style: none;
+    margin: 0 auto;
 }
 .carousel-cell li a {
     text-decoration: none;
