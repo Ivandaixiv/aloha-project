@@ -196,6 +196,14 @@ header.container {
     border-top: 4px solid white;
 }
 /* Featured area */
+.featured-h1 {
+    font-size: 34px;
+    font-style: italic;
+}
+.featured-h1 span {
+    font-weight: bold;
+    font-style: normal;   
+}
 .clothe-type {
     color: #afaeae;
     text-transform: uppercase;
