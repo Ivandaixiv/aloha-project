@@ -196,49 +196,6 @@ header.container {
     border-top: 4px solid white;
 }
 /* Featured area */
-.featured {
-    height: 625px;
-}
-
-.featured-h1 {
-    font-size: 34px;
-    font-style: italic;
-}
-.featured-h1 span {
-    font-weight: bold;
-    font-style: normal;   
-}
-.featured-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 400px;
-}
-.featured-container ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 300px;
-}
-.featured-outterlist {
-    display: none;
-}
-.featured-outterlist:first-child {
-    display: flex;
-}
-.featured-container ul li a {
-    text-align: center;
-    text-decoration: none;
-}
-ul.featured-innerlist {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;    
-    align-items: center;
-    height: 100px;
-    line-height: 35px;
-}
 .clothe-type {
     color: #afaeae;
     text-transform: uppercase;
@@ -328,10 +285,16 @@ footer {
 .fab {
     margin-right: 10px;
 }
+div.main-carousel {
+    display: block;
+}
+.carousel-cell {
+    width: 100%;
+    text-align: center;
+}
+  
 @media screen and (min-width: 400px) {
-    .featured-container {
-        margin-top: 80px;
-    }    
+    
 }
 @media screen and (min-width: 470px) {
     #basket {
@@ -411,15 +374,6 @@ footer {
     .shop {
         height: 350px;
     }
-    .featured-container {
-        margin: 10px 0;
-    }
-    .featured-h1 {
-        font-size: 40px;
-    }
-    .featured-outterlist:nth-child(2) {
-        display: flex;
-    }
     .updates {
        height: 400px;
     }
@@ -442,6 +396,9 @@ footer {
     }
     .footer-block li a p{
         display: inline;
+    }
+    .carousel-cell {
+        width: 25%;
     }
 }
 @media screen and (min-width: 1240px) {
