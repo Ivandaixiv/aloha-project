@@ -199,6 +199,7 @@ header.container {
 .featured-h1 {
     font-size: 34px;
     font-style: italic;
+    text-align: center;
 }
 .featured-h1 span {
     font-weight: bold;
@@ -300,7 +301,12 @@ div.main-carousel {
     width: 100%;
     text-align: center;
 }
-  
+.carousel-cell li {
+    list-style: none;
+}
+.carousel-cell li a {
+    text-decoration: none;
+}
 @media screen and (min-width: 400px) {
     
 }
