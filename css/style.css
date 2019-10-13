@@ -196,6 +196,12 @@ header.container {
     border-top: 4px solid white;
 }
 /* Featured area */
+.featured-container div li a img {
+    margin: 50px 0;;
+}
+.featured {
+    padding: 50px 0;
+}
 .featured-h1 {
     font-size: 34px;
     font-style: italic;
@@ -309,7 +315,9 @@ div.main-carousel {
     text-decoration: none;
 }
 @media screen and (min-width: 400px) {
-    
+    .shop {
+        height: 900px;
+    }
 }
 @media screen and (min-width: 470px) {
     #basket {
@@ -320,13 +328,20 @@ div.main-carousel {
     }
 }
 @media screen and (min-width: 600px) {
-    
+    .aloha-logo {
+        width: 150px;
+        height: 60px;
+    }
+    .basket-logo {
+        height: 60px;
+        width: 60px;
+    }
     .main-navigation {
         border-top: none;
     }
     .main-navigation ul {
         justify-content: center;
-        font-size: 1.20em;
+        font-size: 1.40em;
         padding: 0;
     }
     .main-navigation ul li a {
@@ -345,18 +360,18 @@ div.main-carousel {
     }
     .about {
         padding: 30px 0 55px 0;
-        width: 600px;
+        width: 700px;
     }
     .about h2 {
         font-size: 42px;
     }
     .about p {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 100;
         line-height: 50px;
     }
     .category-list {
-        height: 50vh;
+        height: 60vh;
     }
     .category-list li {
         flex-basis: 25%;
@@ -389,13 +404,25 @@ div.main-carousel {
     .shop {
         height: 350px;
     }
+    .featured {
+        padding: 100px 0;
+    }
+    .featured-h1 {
+        font-size: 48px;
+    }
+    .clothe-name {
+        font-size: 30px;
+    }
     .updates {
-       height: 400px;
+       height: 500px;
     }
     .updates div p {
-        font-size: 18px;
+        font-size: 24px;
         max-width: 90%;
         font-weight: 100;
+    }
+    .update-h1 {
+        font-size: 48px;
     }
     .footer-div {
         text-align: left;
@@ -406,28 +433,24 @@ div.main-carousel {
     .footer-nav li {
         display: flex;
     }
+    .footer-nav li a {
+        line-height: 40px;
+    }
     .footer-block li {
         line-height: 30px;
+        font-size: 20px;
     }
     .footer-block li a p{
         display: inline;
     }
     .carousel-cell {
-        width: 25%;
+        width: 50%;
+    }
+    .carousel-cell li {
+        line-height: 50px;
     }
 }
 @media screen and (min-width: 1240px) {
-    .banner {
-        background-position: 50% 0, 50% 60px;
-        background-size: contain, 20%;
-        height: 550px;
-    }
-    .banner-content {
-        padding: 100px 0;
-    }
-    .banner-content h3 {
-        font-size: 70px;
-    }
     .about {
         padding: 0px 0 35px 0;
         width: 700px;
@@ -444,15 +467,6 @@ div.main-carousel {
     }
     .shop {
         height: 300px;
-    }
-    .featured-container {
-        margin: 400px 0;
-    }
-    .featured-h1 {
-        font-size: 40px;
-    }
-    .featured-outterlist {
-        display: flex;
     }
     .updates {
        height: 350px;
