@@ -327,6 +327,11 @@ div.main-carousel {
         order: 2;
     }
 }
+@media screen and (min-width: 500px) {
+    .featured {
+        margin-top: 200px;
+    }
+}
 @media screen and (min-width: 600px) {
     .aloha-logo {
         width: 150px;
@@ -405,6 +410,7 @@ div.main-carousel {
         height: 350px;
     }
     .featured {
+        margin-top: 0;
         padding: 100px 0;
     }
     .featured-h1 {
@@ -456,8 +462,7 @@ div.main-carousel {
         width: 700px;
     }
     .about p {
-        margin-top: 10px;
-        font-weight: 100;
+        font-size: 16px;
     }
     .category-list {
         height: 105vh;
@@ -466,19 +471,42 @@ div.main-carousel {
         font-size: 40px;
     }
     .shop {
-        height: 300px;
+        height: 600px;
+    }
+    .featured {
+        padding: 50px 0;
+    }
+    .featured-h1 {
+        font-size: 34px;
+    }
+    .featured-container div li a img {
+        width: 80%;
+        height: 50%;
+    }
+    .clothe-name {
+        font-size: 20px;
     }
     .updates {
-       height: 350px;
+       height: 300px;
+    }
+    .updates .container-small {
+        justify-content: space-evenly;
     }
     .updates div p {
         max-width: 55%;
+        font-size: 16px;
     }
     .footer-div {
-        text-align: left;
-        flex-direction: row ;
-        justify-content: space-between;
-        margin: 0 20px;
+        margin: 0 80px;
+    }
+    .footer-nav li a {
+        font-size: 16px;
+    }
+    .carousel-cell {
+        width: 25%;
+    }
+    .carousel-cell li {
+        line-height: 25px;
     }
 }      
 @media screen and (min-width: 1350px) {
@@ -490,6 +518,8 @@ div.main-carousel {
     }
     .container {
         padding: 0 15%;
+        padding-top: 350px;
+        padding-bottom: 50px;   
     }
     .banner {
         background-size: contain, 15%;
