@@ -59,6 +59,7 @@ header.container {
 /* navigation bar */
 .main-navigation {
     order: 3;
+    flex-basis: 100%;
     flex-grow: 1;
     justify-content: space-around;
     font-size: 14px;    
@@ -343,30 +344,25 @@ footer {
 .fab {
     margin-right: 10px;
 }
-@media screen and (min-width: 470px) {
-    #basket {
-        order: 3;
-    }
-    .main-navigation {
-        order: 2;
-    }
-}
-@media screen and (min-width: 500px) {
-
-}
 @media screen and (min-width: 600px) {
     /* header area */
     .aloha-logo {
         width: 150px;
         height: 60px;
+        order: 1;
     }
     .basket-logo {
         height: 60px;
         width: 60px;
     }
+    #basket {
+        order: 3;
+    }
     /* main navigation area */
     .main-navigation {
+        order: 2;
         border-top: none;
+        flex-basis: 50%;
     }
     .main-navigation ul {
         justify-content: center;
@@ -543,7 +539,7 @@ footer {
         transform: scale(1.25);
     }
     .featured {
-        margin: -50px 15% 50px 15%;
+        margin: 0px 15% 50px 15%;
     }
     /* banner area */
     .banner {
