@@ -272,6 +272,7 @@ div.main-carousel {
     justify-content: space-around;
     height: 300px;
 }
+/* newletter form area */
 .form-container {
     position: relative;
     width: 60%;
@@ -310,6 +311,7 @@ footer {
     text-align: center;
     padding: 50px 0;
 }
+/* footer addresses area */
 .address {
     color: #969696;
 }
@@ -332,6 +334,7 @@ footer {
 .footer-split {
     padding-top: 20px;
 }
+/* footer social media area */
 .footer-email {
     text-decoration: underline;
 }
@@ -360,6 +363,7 @@ footer {
     }
 }
 @media screen and (min-width: 600px) {
+    /* header area */
     .aloha-logo {
         width: 150px;
         height: 60px;
@@ -368,6 +372,7 @@ footer {
         height: 60px;
         width: 60px;
     }
+    /* main navigation area */
     .main-navigation {
         border-top: none;
     }
@@ -379,6 +384,7 @@ footer {
     .main-navigation ul li a {
         margin: 0px 12px;
     }
+    /* banner area and banner text */
     .banner {
         background-position: 50% 0, 50% 50px;
         background-size: cover, 30%;
@@ -390,6 +396,7 @@ footer {
     .banner-content h3 {
         font-size: 54px;
     }
+    /* about section */
     .about {
         padding: 30px 0 55px 0;
         width: 700px;
@@ -402,6 +409,7 @@ footer {
         font-weight: 100;
         line-height: 50px;
     }
+    /* category area */
     .category-list {
         height: 60vh;
     }
@@ -436,6 +444,13 @@ footer {
     .shop {
         height: 350px;
     }
+    /* featured area */
+    .carousel-cell {
+        width: 50%;
+    }
+    .carousel-cell li {
+        line-height: 50px;
+    }
     .featured {
         margin-top: 0;
         padding: 100px 0;
@@ -446,6 +461,7 @@ footer {
     .clothe-name {
         font-size: 30px;
     }
+    /* subscrib and newletter area */
     .updates {
        height: 500px;
     }
@@ -457,12 +473,14 @@ footer {
     .update-h1 {
         font-size: 48px;
     }
+    /* footer area */
     .footer-div {
         text-align: left;
         flex-direction: row ;
         justify-content: space-between;
         margin: 0 20px;
     }
+    /* footer social media area */
     .footer-nav li {
         display: flex;
     }
@@ -476,14 +494,9 @@ footer {
     .footer-block li a p{
         display: inline;
     }
-    .carousel-cell {
-        width: 50%;
-    }
-    .carousel-cell li {
-        line-height: 50px;
-    }
 }
 @media screen and (min-width: 1240px) {
+    /* about section */
     .about {
         padding: 0px 0 35px 0;
         width: 700px;
@@ -491,6 +504,7 @@ footer {
     .about p {
         font-size: 16px;
     }
+    /* category area */
     .category-list {
         height: 105vh;
     }
@@ -500,6 +514,7 @@ footer {
     .shop {
         height: 600px;
     }
+    /* featured area */
     .featured {
         padding: 50px 0;
     }
@@ -519,6 +534,7 @@ footer {
     .clothe-name {
         font-size: 20px;
     }
+    /* newsletter area */
     .updates {
        height: 300px;
     }
@@ -529,6 +545,7 @@ footer {
         max-width: 55%;
         font-size: 16px;
     }
+    /* footer area */
     .footer-div {
         margin: 0 80px;
     }
@@ -537,6 +554,7 @@ footer {
     }
 }      
 @media screen and (min-width: 1350px) {
+    /* header area */
     .aloha-logo {
         transform: scale(1.25);
     }
@@ -548,6 +566,7 @@ footer {
         padding-top: 350px;
         padding-bottom: 50px;   
     }
+    /* banner area */
     .banner {
         background-size: contain, 15%;
     }
@@ -557,6 +576,7 @@ footer {
     .category-list {
         height: 150vh;
     }
+    /* footer area */
     .footer-div {
         margin: 0 20%;
     }
