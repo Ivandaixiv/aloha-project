@@ -124,9 +124,6 @@ header.container {
     font-weight: 200;
 }
 /* category area */
-.shop {
-    height: 850px;
-}
 .category-list {
     display: flex;
     flex-wrap: wrap;
@@ -215,12 +212,14 @@ div.main-carousel {
     margin: 50px 0;;
 }
 .featured {
+    margin: 150px 0;
     padding: 50px 0;
 }
 .featured-h1 {
     font-size: 34px;
     font-style: italic;
     text-align: center;
+    margin-top: 50px;
 }
 .featured-h1 span {
     font-weight: bold;
@@ -344,11 +343,6 @@ footer {
 .fab {
     margin-right: 10px;
 }
-@media screen and (min-width: 400px) {
-    .shop {
-        height: 900px;
-    }
-}
 @media screen and (min-width: 470px) {
     #basket {
         order: 3;
@@ -358,9 +352,7 @@ footer {
     }
 }
 @media screen and (min-width: 500px) {
-    .featured {
-        margin-top: 200px;
-    }
+
 }
 @media screen and (min-width: 600px) {
     /* header area */
@@ -378,11 +370,8 @@ footer {
     }
     .main-navigation ul {
         justify-content: center;
-        font-size: 1.40em;
+        font-size: 1.20em;
         padding: 0;
-    }
-    .main-navigation ul li a {
-        margin: 0px 12px;
     }
     /* banner area and banner text */
     .banner {
@@ -441,9 +430,6 @@ footer {
         flex-basis: 50%;
         border-left: 4px solid white;
     }
-    .shop {
-        height: 350px;
-    }
     /* featured area */
     .carousel-cell {
         width: 50%;
@@ -452,14 +438,15 @@ footer {
         line-height: 50px;
     }
     .featured {
-        margin-top: 0;
-        padding: 100px 0;
+        margin: 250px 0;
+        margin-bottom: 0;
     }
     .featured-h1 {
         font-size: 48px;
+        margin-top: -500px;
     }
     .clothe-name {
-        font-size: 30px;
+        font-size: 20px;
     }
     /* subscrib and newletter area */
     .updates {
@@ -511,12 +498,9 @@ footer {
     .category-list li a {
         font-size: 40px;
     }
-    .shop {
-        height: 600px;
-    }
     /* featured area */
     .featured {
-        padding: 50px 0;
+        margin: 100px 0;
     }
     .featured-h1 {
         font-size: 34px;
@@ -530,9 +514,6 @@ footer {
     }
     .carousel-cell li {
         line-height: 25px;
-    }
-    .clothe-name {
-        font-size: 20px;
     }
     /* newsletter area */
     .updates {
@@ -561,17 +542,12 @@ footer {
     .basket-logo {
         transform: scale(1.25);
     }
-    .container {
-        padding: 0 15%;
-        padding-top: 350px;
-        padding-bottom: 50px;   
+    .featured {
+        margin: -50px 15% 50px 15%;
     }
     /* banner area */
     .banner {
         background-size: contain, 15%;
-    }
-    .shop {
-        height: 500px;
     }
     .category-list {
         height: 150vh;
@@ -584,4 +560,4 @@ footer {
         font-family: Raleway;
         font-weight: 100;
     }
-}
+})
