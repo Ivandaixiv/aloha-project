@@ -153,14 +153,14 @@ header.container {
 .category-list li a:hover {
     color: #f5ebc6;
 }
-#category-men {
+.category-list li:first-child {
     flex-grow: 1;
     background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/mens-category.jpg);
     order: 1;
     flex-basis: 100%;
     border-bottom: 4px solid white;
 }
-#category-trends {
+.category-list li:nth-child(2) {
     background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/trends-category.jpg);
     order: 2;
     border-top: 4px solid white;
@@ -168,28 +168,28 @@ header.container {
     border-bottom: 4px solid white;
     
 }
-#category-glasses {
+.category-list li:nth-child(3) {
     background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/glasses-category.jpg);
     order: 3;
     border-top: 4px solid white;
     border-left: 4px solid white;
     border-bottom: 4px solid white;
 }
-#category-sale {
+.category-list li:nth-child(4) {
     background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/sale-category.jpg);
     order: 4;
     border-top: 4px solid white;
     border-right: 4px solid white;
     border-bottom: 4px solid white;
 }
-#category-bag {
+.category-list li:nth-child(5) {
     background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/bags-category.jpg);
     order: 5;
     border-top: 4px solid white;
     border-left: 4px solid white;
     border-bottom: 4px solid white;
 }
-#category-women {
+.category-list li:last-child{
     flex-grow: 1;
     background-image: linear-gradient(to top, rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/womens-category.jpg);
     order: 6;
@@ -409,25 +409,25 @@ div.main-carousel {
     .category-list li a {
         font-size: 24px;
     }
-    #category-men {
+    .category-list li:first-child{
         flex-basis: 50%;
         border-right: 4px solid white;
     }
-    #category-trends {
+    .category-list li:nth-child(2) {
         border-left: 4px solid white;
         border-top: none;
     }
-    #category-glasses {
+    .category-list li:nth-child(3) {
         border-top: none;
     }
-    #category-sale {
+    .category-list li:nth-child(4) {
         border-bottom: none;
     }
-    #category-bag {
+    .category-list li:nth-child(5) {
         border-right: 4px solid white;
         border-bottom: none;
     }
-    #category-women {
+    .category-list li:last-child {
         flex-basis: 50%;
         border-left: 4px solid white;
     }

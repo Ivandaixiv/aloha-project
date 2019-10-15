@@ -6,4 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     wrapAround: true,
     freeScroll: true
     });
+    const formListener = document.getElementById('submit');
+    formListener.addEventListener('submit', function(){
+        alert("Thank you for subscribing!")
+    });
 });  // end of doc ready
