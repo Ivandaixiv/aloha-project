@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     wrapAround: true,
     freeScroll: true
     });
+    
+    // Event listener and alert when the user submits a valid email
     const formListener = document.getElementById('submit');
     formListener.addEventListener('submit', function(){
         alert("Thank you for subscribing!")

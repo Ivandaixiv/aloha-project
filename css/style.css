@@ -56,6 +56,7 @@ header.container {
     width: 48px;
     height: 48px;
 }
+/* navigation bar */
 .main-navigation {
     order: 3;
     flex-grow: 1;
@@ -196,7 +197,21 @@ header.container {
     border-top: 4px solid white;
 }
 /* Featured area */
-.featured-container div li a img {
+div.main-carousel {
+    display: block;
+}
+.carousel-cell {
+    width: 100%;
+    text-align: center;
+}
+.carousel-cell li {
+    list-style: none;
+    margin: 0 auto;
+}
+.carousel-cell li a {
+    text-decoration: none;
+}
+.carousel-cell li a img{
     margin: 50px 0;;
 }
 .featured {
@@ -325,20 +340,6 @@ footer {
 }
 .fab {
     margin-right: 10px;
-}
-div.main-carousel {
-    display: block;
-}
-.carousel-cell {
-    width: 100%;
-    text-align: center;
-}
-.carousel-cell li {
-    list-style: none;
-    margin: 0 auto;
-}
-.carousel-cell li a {
-    text-decoration: none;
 }
 @media screen and (min-width: 400px) {
     .shop {
@@ -505,9 +506,15 @@ div.main-carousel {
     .featured-h1 {
         font-size: 34px;
     }
-    .featured-container div li a img {
+    .carousel-cell li a img{
         width: 80%;
         height: 50%;
+    }
+    .carousel-cell {
+        width: 25%;
+    }
+    .carousel-cell li {
+        line-height: 25px;
     }
     .clothe-name {
         font-size: 20px;
@@ -527,12 +534,6 @@ div.main-carousel {
     }
     .footer-nav li a {
         font-size: 16px;
-    }
-    .carousel-cell {
-        width: 25%;
-    }
-    .carousel-cell li {
-        line-height: 25px;
     }
 }      
 @media screen and (min-width: 1350px) {
